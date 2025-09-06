@@ -17,6 +17,7 @@ ENCODED_DATA_DF = pickle.load(open(f'{working_directory}/data/processed/encoded_
 # Define the flask application
 app = Flask(__name__)
 
+
 @app.route('/', methods = ['GET', 'POST'])
 def index():
     if request.method == 'POST':
@@ -36,6 +37,7 @@ def index():
         recommendations = None
 
     return render_template('index.html', recommendations = recommendations)
+
 
 def get_movie_recommendations(movie_title, model, tfidf_matrix, encoded_data_df):
     '''Takes a movie title string, looks up TFIDF feature vector for that movie
