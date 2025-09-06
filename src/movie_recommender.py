@@ -1,18 +1,12 @@
 '''Movie recommendation web app with Flask.'''
 
-from pathlib import Path
 import pickle
 from flask import Flask, request, render_template
 
-current_directory = Path.cwd()
-working_directory = current_directory.parent if current_directory.name == 'src' else current_directory
-
-print(f'Working directory: {working_directory}')
-
 # Load the assets
-MODEL = pickle.load(open(f'{working_directory}/models/model.pkl', 'rb'))
-TFIDF_MATRIX = pickle.load(open(f'{working_directory}/data/processed/tfidf_matrix.pkl', 'rb'))
-ENCODED_DATA_DF = pickle.load(open(f'{working_directory}/data/processed/encoded_features_df.pkl', 'rb'))
+MODEL = pickle.load(open('models/model.pkl', 'rb'))
+TFIDF_MATRIX = pickle.load(open('data/processed/tfidf_matrix.pkl', 'rb'))
+ENCODED_DATA_DF = pickle.load(open('data/processed/encoded_features_df.pkl', 'rb'))
 
 # Define the flask application
 app = Flask(__name__)
