@@ -1,5 +1,11 @@
 # ML web app with Flask: movie recommendation engine
 
+[![Pytest](https://github.com/4GeeksAcademy/gperdrizet-recommender-system-flask/actions/workflows/pytest.yml/badge.svg)](https://github.com/4GeeksAcademy/gperdrizet-recommender-system-flask/actions/workflows/pytest.yml)
+[![Render deployment](https://github.com/4GeeksAcademy/gperdrizet-recommender-system-flask/actions/workflows/deploy.yml/badge.svg)](https://github.com/4GeeksAcademy/gperdrizet-recommender-system-flask/actions/workflows/deploy.yml)
+[![Codespaces Prebuilds](https://github.com/4GeeksAcademy/gperdrizet-recommender-system-flask/actions/workflows/codespaces/create_codespaces_prebuilds/badge.svg)](https://github.com/4GeeksAcademy/gperdrizet-recommender-system-flask/actions/workflows/codespaces/create_codespaces_prebuilds)
+
+Service is live on [Render](https://flask-movie-recommender-fpzc.onrender.com).
+
 **Note**: Render 'scales to zero', so it may take a few minutes for the service to start back up if no one has used it in a while.
 
 
