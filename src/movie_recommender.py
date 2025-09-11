@@ -6,7 +6,7 @@ from flask import Flask, request, render_template
 # Load the assets
 MODEL = pickle.load(open('models/model.pkl', 'rb'))
 TFIDF_MATRIX = pickle.load(open('data/processed/tfidf_matrix.pkl', 'rb'))
-ENCODED_DATA_DF = pickle.load(open('data/processed/encoded_features_df.pkl', 'rb'))
+ENCODED_DATA_DF = pickle.load(open('data/processed/tag_title_df.pkl', 'rb'))
 
 # Define the flask application
 app = Flask(__name__)
