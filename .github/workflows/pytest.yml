@@ -32,4 +32,4 @@ jobs:
       run: python -m pytest tests/test_model.py
 
     - name: Test bad title
-      run: python -m pytest test/test_bad_title.py
+      run: python -m pytest tests/test_bad_title.py
